@@ -19,12 +19,15 @@
       01.COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #677284;
-  overflow-x: hidden;
 }
 
 * {
@@ -543,6 +546,10 @@ p {
 }
 
 @media (max-width: 767px) {
+  .navbar img {
+    width: 260px;
+  }
+
   .navbar-collapse {
     position: absolute;
     top: 100%;
