@@ -12,16 +12,18 @@
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
-        
 
-        
     <!--====== Animate CSS ======-->
     <link rel="stylesheet" href="assets/css/animate.css">
-        
-
-        
+      
     <!--====== Line Icons CSS ======-->
     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+
+    <!--====== Themify Icons ======-->
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+
+    <!--====== Owl carousel ======-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         
     <!--====== Bootstrap CSS ======-->
     <link rel="stylesheet" href="assets/css/bootstrap.4.5.2.min.css">
@@ -34,7 +36,7 @@
     
 </head>
 
-<body>
+<body style="margin-top: 50px;">
 
     <!--====== PRELOADER PART START ======-->
 
@@ -100,24 +102,66 @@
     
     <!--====== ABOUT PART START ======-->
 
-    <section id="postmortem" class="about_area pt-30 pb-80">
+    <section id="postmortem" class="about_area pt-50 pb-80">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-9">
-                    <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <img class="image" src="assets/images/header_app.png" alt="about">
-                        <img class="dots" src="assets/images/dots.svg" alt="dots">
-                    </div> <!-- about image -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <div class="section_title">
-                            <h4 class="title">Discover New Recipes!</h4>
-                            <p>Something I guess?</p>
-                        </div>
-                        <!-- <a class="main-btn" href="#">Discover</a> -->
+                <div class="col-md-4">
+                    <ul>
+                        <li>
+                            <a href="#architecture">What was the overall architecture of your system?</a>
+                        </li>
+                        <li>
+                            <a href="#right-wrong">What went right/wrong in the development process?</a>
+                        </li>
+                        <li>
+                            <a href="">What would you do differently, if you had the chance to start over?</a>
+                        </li>
+                        <li>
+                            <a href="">How large is the project (number of methods, classes, etc)? How much of this is (roughly) devoted to each major system component? And any other quantifiables (e.g. if you have a record of hours spent on tasks).</a>
+                        </li>
+                        <li>
+                            <a href="">What took the most time? The least? Any surprises?</a>
+                        </li>
+                        <li>
+                            <a href="">Are there any particular design smells, or brilliant design decisions?</a>
+                        </li>
+                        <li>
+                            <a href="">Are there any outstanding bugs?</a>
+                        </li>
+                        <li>
+                            <a href="">Did any features work better than expected?</a>
+                        </li>
+                        <li>
+                            <a href="">Are you using any technologies other than what was required (e.g. JMock, GUI builders, etc.)?</a>
+                        </li>
+                        <li>
+                            <a href="">Are you using any specific techniques covered in the course (TDD, pair programming, scrums, etc)?</a>
+                        </li>
+                        <li>
+                            <a href="">How did the project change from your initial (iteration 0) vision or stories, or did it work out as predicted?</a>
+                        </li>
+                        <li>
+                            <a href="">What did you learn about team or large project development? What will you start doing, keep doing, or stop doing next time?</a>
+                        </li>
+                        <li>
+                            <a href="">Can you draw any conclusions from what you’ve done?</a>
+                        </li>
                         
-                    </div> <!-- about image -->
+                      </ul>
+                </div>
+                <div class="col-md-8">
+                    <div id="architecture" class="each">
+                        <h4 class="title">Architecture</h4>
+                        <p>
+                            The overall architecture was ...
+                        </p>
+                    </div>
+                    <div id="right-wrong" class="each">
+                        <h4 class="title">What went wrong/right?</h4>
+                        <p>
+                            The overall architecture was ...
+                        </p>
+                    </div>
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
@@ -125,25 +169,49 @@
 
     <!--====== ABOUT PART ENDS ======-->
     
-    <!--====== FAQ PART START ======-->
+    <!--====== LEARNT PART START ======-->
 
-    <section id="whatwelearnt" class="faq_area pt-80 pb-80">
+    <section id="whatwelearnt" class="section faq_area pt-80 pb-80">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="section_title text-center pb-25">
-                        <h4 class="title">Frequently Asked Questions</h4>
-                        <p>Ask something</p>
+                        <h4 class="title">What We Learnt</h4>
+                        <p>Some of the things we have learnt through out the project</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
-            <div class="row justify-content-center">
-                FAQ
-            </div> <!-- row -->
+            <div id="all-learnt" class="learnt owl-carousel">
+                <div class="learnt-single">
+                    <h5 class="mt-4 mb-2">Member 1</h5>
+                    <p class="text-primary">I like smt</p>
+                    <blockquote class="blockquote">I haven't learnt jack</blockquote>
+                </div>
+                <div class="learnt-single">
+                    <h5 class="mt-4 mb-2">Member 2</h5>
+                    <p class="text-primary">I like smt</p>
+                    <blockquote class="blockquote">I haven't learnt jack</blockquote>
+                </div>
+                <div class="learnt-single">
+                    <h5 class="mt-4 mb-2">Member 3</h5>
+                    <p class="text-primary">I like smt</p>
+                    <blockquote class="blockquote">I haven't learnt jack</blockquote>
+                </div>
+                <div class="learnt-single">
+                    <h5 class="mt-4 mb-2">Member 4</h5>
+                    <p class="text-primary">I like smt</p>
+                    <blockquote class="blockquote">I haven't learnt jack</blockquote>
+                </div>
+                <div class="learnt-single">
+                    <h5 class="mt-4 mb-2">Member 5</h5>
+                    <p class="text-primary">I like smt</p>
+                    <blockquote class="blockquote">I haven't learnt jack</blockquote>
+                </div>
+            </div>
         </div> <!-- container -->
     </section>
 
-    <!--====== FAQ PART ENDS ======-->
+    <!--====== LEARNT PART ENDS ======-->
     
     <!--====== FOOTER PART START ======-->
 
@@ -179,6 +247,9 @@
     <!--====== Scrolling Nav js ======-->
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== Owl carousel ======-->
+    <script src="assets/js/owl.carousel.min.js"></script>
     
     <!--====== wow js ======-->
     <script src="assets/js/wow.min.js"></script>

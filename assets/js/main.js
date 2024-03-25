@@ -45,6 +45,18 @@ $(function() {
             });
         }
     });
+
+    //===== What we learnt (postmortem)
+
+    var $testimonialsDiv = $('.learnt');
+    if ($testimonialsDiv.length && $.fn.owlCarousel) {
+        $testimonialsDiv.owlCarousel({
+            items: 1,
+            nav: true,
+            dots: false,
+            navText: ['<span class="ti-arrow-left"></span>', '<span class="ti-arrow-right"></span>']
+        });
+    }
     
     //===== close navbar-collapse when a  clicked
 
@@ -91,22 +103,4 @@ $(function() {
     })
     wow.init();
     
-    
-    //===== 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-});
+}); // End

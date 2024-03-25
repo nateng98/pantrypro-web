@@ -1057,71 +1057,52 @@ p {
 }
 
 /*===========================
-      03.FEATURES css 
+      03.FEATURES TABS css 
 ===========================*/
-.features_area {
-  position: relative;
-  z-index: 5;
+
+.tab-content {
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #FFF;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.04);
+  padding: 3rem;
 }
 
-.single_features {
-  background-color: #fff;
-  padding: 60px 25px;
-  border-radius: 10px;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  -webkit-box-shadow: 0px 3px 35px 0px rgba(158, 158, 158, 0.1);
-  box-shadow: 0px 3px 35px 0px rgba(158, 158, 158, 0.1);
+@media (max-width:992px) {
+  .tab-content {
+      padding: 1.5rem;
+  }
 }
 
-.single_features:hover {
-  -webkit-box-shadow: 0px 3px 35px 0px rgba(158, 158, 158, 0.2);
-  box-shadow: 0px 3px 35px 0px rgba(158, 158, 158, 0.2);
+.tab-content p {
+  line-height: 1.8;
 }
 
-.single_features:hover .features_icon i {
-  border-radius: 50%;
+.tab-content h2 {
+  margin-bottom: 0.5rem;
 }
 
-.single_features .features_icon i {
-  width: 78px;
-  height: 78px;
-  line-height: 78px;
-  text-align: center;
-  color: #fff;
-  font-size: 40px;
-  border-radius: 10px;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+.nav-tabs {
+  border-bottom: 0;
 }
 
-.single_features .features_content {
-  margin-top: 25px;
+.nav-tabs .nav-item .nav-link,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  padding: 1rem 1rem;
+  border-color: #f6fbf7 #f6fbf6 #FFF;
+  font-size: 19px;
+  color: #53885a;
+  background: #eff7f0;
 }
 
-.single_features .features_content .features_title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #3A424E;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+.nav-tabs .nav-link.active {
+  background: #FFF;
+  border-top-width: 3px;
+  border-color: #39915b #f6fbf7 #FFF;
+  color: #39915b;
 }
 
-.single_features .features_content p {
-  margin-top: 15px;
-}
-
-.single_features.features_1 .features_icon i {
-  background-color: #F85146;
-}
-
-.single_features.features_2 .features_icon i {
-  background-color: #3698EE;
-}
-
-.single_features.features_3 .features_icon i {
-  background-color: #581CCB;
-}
 
 /*===========================
        04.ABOUT css 
@@ -1384,6 +1365,70 @@ p {
   z-index: 99;
 }
 
+#all-faq, #all-learnt {
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: #FFF;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.04);
+  padding: 3rem;
+}
+
+/*===========================
+        11.5.LEARNT css 
+===========================*/
+
+.learnt-single {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.blockquote {
+  color: #7a767a;
+  font-weight: 300;
+}
+
+.owl-next.disabled,
+.owl-prev.disabled {
+  opacity: 0.5;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: 0;
+}
+
+.owl-next {
+  right: 0;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 60px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #e7d9eb;
+  width: 35px;
+  height: 8px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #ff487e;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #ff487e;
+  box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
+}
+
 /*===========================
         12.FOOTER css 
 ===========================*/
@@ -1418,6 +1463,10 @@ p {
 .footer_copyright p a:hover {
   color: #3698EE;
 }
+
+/* #postmortem {
+  margin-top: 80px;
+} */
 
 /*===== BACK TO TOP =====*/
 .back-to-top {
