@@ -1464,9 +1464,13 @@ p {
   color: #3698EE;
 }
 
-/* #postmortem {
-  margin-top: 80px;
-} */
+.sticky-question { 
+  position: sticky; 
+  top: 20px; 
+  background-color: rgb(32, 165, 20); 
+  color: white; 
+  padding: 10px; 
+}
 
 /*===== BACK TO TOP =====*/
 .back-to-top {
