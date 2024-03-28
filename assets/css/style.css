@@ -1464,12 +1464,18 @@ p {
   color: #3698EE;
 }
 
-.sticky-question { 
-  position: sticky; 
-  top: 20px; 
-  background-color: rgb(32, 165, 20); 
-  color: white; 
-  padding: 10px; 
+/*===========================
+        13.POSTMORTEM css 
+===========================*/
+.each-question {
+ margin-bottom: 30px;
+}
+
+/*===========================
+        14.LEARNT css 
+===========================*/
+.ti-arrow-right, .ti-arrow-left {
+  margin: 20px;
 }
 
 /*===== BACK TO TOP =====*/
