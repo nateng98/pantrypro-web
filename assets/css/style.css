@@ -1103,6 +1103,15 @@ p {
   color: #39915b;
 }
 
+.feature-step {
+  margin-top: 10px;
+}
+
+.feature-step li {
+  padding: 8px;
+  font-size: 18px;
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width) */
@@ -1484,6 +1493,10 @@ p {
 .each-question {
  margin-bottom: 30px;
 }
+
+.each-question p{
+  padding-top: 8px;
+ }
 
 /*===========================
         14.LEARNT css 
